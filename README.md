@@ -1,7 +1,7 @@
 ### Login and Register Page
 Página front-end (estática) com **modal de Login e Registro**, focada em UI/UX e manipulação de DOM para alternância entre formulários.
 
-### Resumo curricular do projeto
+### Resumo
 - **Objetivo**: demonstrar construção de interface responsiva para autenticação (login/cadastro) com microinterações e validações nativas do navegador.
 - **Entregas (features)**:
   - **Header fixo** com navegação e CTA de Login.
@@ -24,7 +24,7 @@ Página front-end (estática) com **modal de Login e Registro**, focada em UI/UX
 - **Build**: não aplicável (sem pipeline de build; arquivos estáticos).
 - **Requisitos**: navegador moderno com suporte a CSS `backdrop-filter` (degradação aceitável quando indisponível).
 
-### Arquitetura (estrutura do código)
+### Arquitetura
 - **`index.html`**: estrutura da página, header e marcação dos formulários (Login/Registro) dentro do modal (`.wrapper`).
 - **`style.css`**: tema visual e layout (header, modal, formulários, transições); background em `images/forest.jpg`.
 - **`script.js`**: comportamento do modal e alternância de formulários via classes:
@@ -32,7 +32,7 @@ Página front-end (estática) com **modal de Login e Registro**, focada em UI/UX
   - `.active` (troca entre Login e Registro)
 - **`images/`**: assets estáticos (background `forest.jpg`).
 
-### Modelos (domínio)
+### Modelos
 Como é um projeto de UI (sem backend), os “modelos” são os dados coletados nos formulários:
 - **Login**
   - **E-mail** (campo `email`)
@@ -43,12 +43,3 @@ Como é um projeto de UI (sem backend), os “modelos” são os dados coletados
   - **E-mail** (campo `email`)
   - **Senha** (campo `password`)
   - **Aceite de termos** (checkbox)
-
-### Endpoints (catálogo)
-Não se aplica: **não há API/rotas HTTP implementadas** neste repositório (somente front-end estático).
-
-### Qualidade e suporte operacional (visão curricular)
-- **Testes existentes**: não há suíte de testes no repositório.
-- **Observabilidade/tooling**: não aplicável (sem backend/telemetria).
-- **Decisões de persistência**:
-  - **Sem persistência** por ser um projeto de portfólio focado em interface e interação; os formulários não enviam dados para servidor (ação `#`).
